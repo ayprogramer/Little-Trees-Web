@@ -3,37 +3,258 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Little Trees: Screen Time - Take control of your screen time by turning mindful choices into healthy habits">
-    <title>Little Trees: Screen Time</title>
+    <meta name="description" content="Little Trees: Take control of your screen time. Block distracting apps, take mindful breaths, grow your virtual tree, and connect with friends.">
+    <meta name="keywords" content="screen time, app blocker, digital wellness, mindfulness, focus app">
+    <meta property="og:title" content="Little Trees - Mindful Screen Time">
+    <meta property="og:description" content="Take control of your screen time by turning mindful choices into healthy habits.">
+    <meta property="og:type" content="website">
+    <title>Little Trees - Mindful Screen Time</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
-    <header>
-        <h1>Little Trees: Screen Time</h1>
-    </header>
-
-    <main>
-        <section id="home">
-            <p>Welcome to the official website for Little Trees: Screen Time.<br>
-            Our app helps you take control of your screen time by turning mindful choices into healthy habits.</p>
-
-            <ul>
-                <li>Block distracting apps</li>
-                <li>Set daily limits</li>
-                <li>Pause to take a breath before unlocking apps</li>
-                <li>Grow your virtual tree as you stick to your goals</li>
-                <li>Add friends, track streaks, and stay motivated</li>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 4C16 4 12 8 12 12C12 14 13 16 16 16C19 16 20 14 20 12C20 8 16 4 16 4Z" fill="#00c8ff"/>
+                    <path d="M16 10C16 10 10 16 10 22C10 26 12 28 16 28C20 28 22 26 22 22C22 16 16 10 16 10Z" fill="#4dd9ff"/>
+                    <rect x="15" y="26" width="2" height="4" fill="#0d1b2a"/>
+                </svg>
+                Little Trees
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="https://apps.apple.com/us/app/little-trees-screen-time/id6751080040" class="nav-app-store"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store"></a></li>
             </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
 
-            <p>
-                <a href="support.html">Support</a> |
-                <a href="privacy.html">Privacy Policy</a>
-            </p>
-        </section>
-    </main>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0a8 8 0 100 16A8 8 0 008 0zm3.5 7.5l-4 4a.5.5 0 01-.7 0l-2-2a.5.5 0 01.7-.7L7 10.3l3.6-3.6a.5.5 0 01.7.7z"/></svg>
+                    Screen Time Wellness App
+                </div>
+                <h1>Grow mindful habits,<br><span>one breath at a time</span></h1>
+                <p class="hero-description">Little Trees helps you take control of your screen time by turning mindful choices into healthy habits. Block apps, pause to breathe, and watch your tree flourish.</p>
+                <div class="hero-buttons">
+                    <a href="https://apps.apple.com/us/app/little-trees-screen-time/id6751080040" class="app-store-badge">
+                        <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store">
+                    </a>
+                    <a href="#features" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-elements">
+                    <span class="floating-leaf">🍃</span>
+                    <span class="floating-leaf">🌿</span>
+                    <span class="floating-leaf">🍂</span>
+                </div>
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <div class="phone-tree">🌲</div>
+                        <div class="phone-streak">
+                            Your streak
+                            <span>7 days</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2025 Little Trees. All rights reserved.</p>
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Features</span>
+                <h2>Everything you need to build<br>healthier screen habits</h2>
+                <p>Little Trees combines powerful app blocking with mindfulness techniques to help you develop a healthier relationship with your phone.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🚫</div>
+                    <h3>Block Distracting Apps</h3>
+                    <p>Choose which apps to block and set daily limits. Take back control of your time and attention.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🧘</div>
+                    <h3>Breathe Before Opening</h3>
+                    <p>Pause and take a mindful breath before opening blocked apps. Create space between impulse and action.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">💬</div>
+                    <h3>Daily Inspiration</h3>
+                    <p>Get motivating quotes when you resist temptation. Each moment of mindfulness is celebrated.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🌱</div>
+                    <h3>Grow Your Tree</h3>
+                    <p>Watch your virtual tree grow as you stick to your goals. Visual progress keeps you motivated.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">👥</div>
+                    <h3>Connect with Friends</h3>
+                    <p>Add friends, compare streaks, and stay accountable together. Growth is better shared.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Privacy First</h3>
+                    <p>Your data stays on your device. We never track which apps you use or sell your information.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">How It Works</span>
+                <h2>Start your journey in minutes</h2>
+                <p>Getting started with Little Trees is simple. Here's how to begin building better habits.</p>
+            </div>
+            <div class="steps-container">
+                <div class="step fade-in">
+                    <div class="step-number">1</div>
+                    <h3>Choose Your Apps</h3>
+                    <p>Select which apps you want to be more mindful about using.</p>
+                </div>
+                <div class="step fade-in">
+                    <div class="step-number">2</div>
+                    <h3>Set Your Limits</h3>
+                    <p>Define daily time limits that work for your lifestyle.</p>
+                </div>
+                <div class="step fade-in">
+                    <div class="step-number">3</div>
+                    <h3>Pause & Breathe</h3>
+                    <p>When you try to open a blocked app, take a breath first.</p>
+                </div>
+                <div class="step fade-in">
+                    <div class="step-number">4</div>
+                    <h3>Watch It Grow</h3>
+                    <p>See your tree flourish as you build consistent habits.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="quote-section">
+        <div class="container">
+            <div class="quote-content fade-in">
+                <p class="quote-text">"Almost everything will work again if you unplug it for a few minutes, including you."</p>
+                <p class="quote-attribution">— Anne Lamott</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content fade-in">
+                <h2>Ready to grow healthier habits?</h2>
+                <p>Join thousands of people who are taking control of their screen time with Little Trees. Download free today.</p>
+                <a href="https://apps.apple.com/us/app/little-trees-screen-time/id6751080040" class="app-store-badge">
+                    <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 4C16 4 12 8 12 12C12 14 13 16 16 16C19 16 20 14 20 12C20 8 16 4 16 4Z" fill="#00c8ff"/>
+                            <path d="M16 10C16 10 10 16 10 22C10 26 12 28 16 28C20 28 22 26 22 22C22 16 16 10 16 10Z" fill="#4dd9ff"/>
+                            <rect x="15" y="26" width="2" height="4" fill="#1b2838"/>
+                        </svg>
+                        Little Trees
+                    </div>
+                    <p>Take control of your screen time by turning mindful choices into healthy habits.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>App</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="https://apps.apple.com/us/app/little-trees-screen-time/id6751080040">Download</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="support.html">Support</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="mailto:littletreesapp@gmail.com">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Little Trees. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
+
+    <script>
+        // Navigation scroll effect
+        const nav = document.getElementById('nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile navigation toggle
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close mobile nav on link click
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Fade in on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
 </body>
 </html>
